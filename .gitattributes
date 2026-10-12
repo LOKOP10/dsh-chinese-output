@@ -1,0 +1,7 @@
+# 插件是跨平台的 JS 包，行尾统一为 LF，避免 Windows 检出时产生噪音 diff。
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary

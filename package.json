@@ -1,0 +1,53 @@
+{
+  "name": "dsh-chinese-output",
+  "displayName": "DSH 中文思考与输出",
+  "description": "让 DeepSeek Harness 的 Agent 全程使用中文：思考过程与最终输出都用中文，同时保留代码、路径、命令与工具参数原文。Force the DSH agent to think and answer in Chinese while leaving code, paths, commands and tool arguments untouched.",
+  "version": "1.0.0",
+  "author": "LOKOP01",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOKOP01/dsh-chinese-output.git"
+  },
+  "homepage": "https://github.com/LOKOP01/dsh-chinese-output#readme",
+  "bugs": {
+    "url": "https://github.com/LOKOP01/dsh-chinese-output/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "chinese",
+    "中文",
+    "language",
+    "prompt"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/selftest.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "test",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

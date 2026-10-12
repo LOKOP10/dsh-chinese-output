@@ -1,0 +1,10 @@
+# dsh-chinese-output 的 bundle 层。
+#
+# 这里插入插件入口，让 profile 组合时把「中文思考 + 中文输出」的提示词段落
+# 注册进系统提示词。默认值写在插件自己的 Config schema 里；要改默认行为，
+# 请在本 profile 的 cordis.patch.yml 里用同一个 id 覆盖 config。
+- insert:
+    - id: chinese-output
+      name: dsh-chinese-output
+      config:
+        enabled: true
